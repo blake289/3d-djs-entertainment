@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3D DJ's Entertainment LLC - Premium DJ entertainment for weddings, corporate events, and private parties in Las Vegas. Unforgettable experiences guaranteed.">
+  <meta name="keywords" content="Las Vegas DJ, Wedding DJ, Corporate Event DJ, Private Party DJ, Photo Booth, Audio Guest Book">
+  <title>3D DJ's Entertainment LLC | Premium DJ Services in Las Vegas</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Splash Intro -->
+  <div class="splash" id="splash">
+    <div class="splash__bg-images">
+      <img class="splash__bg-image" src="assets/hero-bg-1.jpg" alt="">
+      <img class="splash__bg-image" src="assets/hero-bg-2.jpg" alt="">
+      <img class="splash__bg-image" src="assets/hero-bg-3.jpg" alt="">
+    </div>
+    <div class="splash__grain"></div>
+    <img class="splash__logo" src="assets/logo.webp" alt="3D DJ's Entertainment">
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo">
+          <img src="assets/logo.webp" alt="3D DJ's Entertainment">
+        </a>
+        <ul class="nav__menu">
+          <li><a href="#home" class="nav__link nav__link--active">Home</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#djs" class="nav__link">Our DJs</a></li>
+          <li><a href="#packages" class="nav__link">Packages</a></li>
+          <li><a href="#booths" class="nav__link">Photo Booths</a></li>
+          <li><a href="#calendar" class="nav__link">Calendar</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="#home" class="mobile-menu__link">Home</a></li>
+      <li><a href="#about" class="mobile-menu__link">About Us</a></li>
+      <li><a href="#djs" class="mobile-menu__link">Our DJs</a></li>
+      <li><a href="#packages" class="mobile-menu__link">Packages</a></li>
+      <li><a href="#booths" class="mobile-menu__link">Photo Booths</a></li>
+      <li><a href="#calendar" class="mobile-menu__link">Calendar</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img class="hero__bg-image hero__bg-image--active" src="assets/hero-bg-1.jpg" alt="">
+      <img class="hero__bg-image" src="assets/hero-bg-2.jpg" alt="">
+      <img class="hero__bg-image" src="assets/hero-bg-3.jpg" alt="">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <img class="hero__logo" src="assets/logo.webp" alt="3D DJ's Entertainment">
+      <h1 class="hero__headline">Premium DJ Entertainment for Unforgettable Events</h1>
+      <p class="hero__subtext">Las Vegas • Weddings • Corporate • Private Events</p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">Book Your Event</a>
+        <a href="#packages" class="btn btn--outline">View Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section--charcoal" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content reveal">
+          <span class="section-header__label">Our Story</span>
+          <h2>Setting the Standard for Las Vegas Entertainment</h2>
+          <p>Born in the heart of Las Vegas, 3D DJ's Entertainment has been transforming ordinary events into extraordinary experiences. Our passion for music and dedication to excellence has made us the go-to choice for those who demand nothing but the best.</p>
+          <p>We understand that every event is unique. That's why we take the time to learn your vision, your music preferences, and your guests' expectations. Our team of professional DJs brings not just equipment, but expertise, energy, and an unwavering commitment to making your event unforgettable.</p>
+          <p>From intimate weddings to grand corporate galas, our attention to detail and premium service ensures every moment is perfectly curated. We're not just DJs – we're your partners in creating memories that last a lifetime.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top: 1.5rem;">Get In Touch</a>
+        </div>
+        <div class="about__image reveal">
+          <img src="assets/about-vegas.jpg" alt="Las Vegas nightlife entertainment">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our DJs Section -->
+  <section class="section section--black" id="djs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">The Team</span>
+        <h2 class="section-header__title">Meet Our DJs</h2>
+        <p>Experienced professionals who bring the perfect vibe to every event</p>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="grid grid--3 reveal-stagger" id="djGrid">
+        <!-- DJ Card 1 -->
+        <div class="dj-card" data-dj="dj1">
+          <img class="dj-card__image" src="assets/dj-1.jpg" alt="DJ Marcus">
+          <div class="dj-card__overlay">
+            <h3 class="dj-card__name">DJ Marcus</h3>
+            <span class="dj-card__specialty">Wedding Specialist</span>
+            <p class="dj-card__bio">15+ years creating magical wedding moments across Las Vegas.</p>
+          </div>
+        </div>
+        <!-- DJ Card 2 -->
+        <div class="dj-card" data-dj="dj2">
+          <img class="dj-card__image" src="assets/dj-2.jpg" alt="DJ Aria">
+          <div class="dj-card__overlay">
+            <h3 class="dj-card__name">DJ Aria</h3>
+            <span class="dj-card__specialty">Corporate & Galas</span>
+            <p class="dj-card__bio">Expert at reading the room and elevating corporate events.</p>
+          </div>
+        </div>
+        <!-- DJ Card 3 -->
+        <div class="dj-card" data-dj="dj3">
+          <img class="dj-card__image" src="assets/dj-3.jpg" alt="DJ Rex">
+          <div class="dj-card__overlay">
+            <h3 class="dj-card__name">DJ Rex</h3>
+            <span class="dj-card__specialty">Private Parties</span>
+            <p class="dj-card__bio">High-energy sets that keep the dance floor packed all night.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DJ Modal -->
+  <div class="modal" id="djModal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <img class="modal__image" id="modalImage" src="" alt="">
+      <div class="modal__body">
+        <h3 class="modal__name" id="modalName"></h3>
+        <div class="modal__tags" id="modalTags"></div>
+        <p id="modalBio"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wedding Packages Section -->
+  <section class="section section--charcoal" id="packages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Wedding Packages</span>
+        <h2 class="section-header__title">Premium Packages for Your Perfect Day</h2>
+        <p>Each package is customizable to match your unique vision</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="grid grid--3 reveal-stagger">
+        <!-- Royal Flush Package -->
+        <div class="package-card">
+          <div class="package-card__header">
+            <h3 class="package-card__name">Royal Flush</h3>
+            <span class="package-card__price">Ultimate Experience</span>
+          </div>
+          <div class="package-card__body">
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                6 hours of premium DJ service
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Professional MC services
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Premium sound system
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Dance floor lighting
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                2 wireless microphones
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Ceremony sound included
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary" style="width: 100%;">Inquire Now</a>
+          </div>
+        </div>
+
+        <!-- 4 Aces Package -->
+        <div class="package-card">
+          <div class="package-card__header">
+            <h3 class="package-card__name">4 Aces</h3>
+            <span class="package-card__price">Popular Choice</span>
+          </div>
+          <div class="package-card__body">
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                5 hours of premium DJ service
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Professional MC services
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Premium sound system
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Basic lighting package
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                1 wireless microphone
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary" style="width: 100%;">Inquire Now</a>
+          </div>
+        </div>
+
+        <!-- Full House Package -->
+        <div class="package-card">
+          <div class="package-card__header">
+            <h3 class="package-card__name">Full House</h3>
+            <span class="package-card__price">Essential Package</span>
+          </div>
+          <div class="package-card__body">
+            <ul class="package-card__features">
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                4 hours of DJ service
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                MC announcements
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Quality sound system
+              </li>
+              <li class="package-card__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                1 wired microphone
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary" style="width: 100%;">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ceremony & Cocktail Systems -->
+      <div class="grid grid--2 reveal-stagger" style="margin-top: 4rem;">
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Ceremony PA System</h3>
+            <p class="card__text">Ensure every word of your vows is heard crystal clear. Our ceremony sound package includes discreet speaker placement, wireless lapel microphones, and a dedicated sound technician.</p>
+            <ul class="card__features">
+              <li class="card__feature">Wireless lapel microphones</li>
+              <li class="card__feature">Discreet speaker placement</li>
+              <li class="card__feature">Prelude music playback</li>
+              <li class="card__feature">Professional setup & testing</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Cocktail System</h3>
+            <p class="card__text">Set the perfect mood during cocktail hour with ambient background music. Our cocktail system creates an elegant atmosphere for mingling and conversation.</p>
+            <ul class="card__features">
+              <li class="card__feature">Curated cocktail playlists</li>
+              <li class="card__feature">Balanced ambient sound</li>
+              <li class="card__feature">Separate zone control</li>
+              <li class="card__feature">Seamless transition to reception</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add-Ons Section -->
+  <section class="section section--black" id="addons">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Enhance Your Event</span>
+        <h2 class="section-header__title">Premium Add-Ons</h2>
+        <p>Take your event to the next level with our enhancement options</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="grid grid--4 reveal-stagger">
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">360° Photo Booth</h4>
+          <p class="card__text">Capture stunning slow-motion videos from every angle</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Static Photo Booth</h4>
+          <p class="card__text">Classic photo booth experience with custom backdrops</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="23"></line>
+              <line x1="8" y1="23" x2="16" y2="23"></line>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Audio Guest Book</h4>
+          <p class="card__text">Heartfelt voice messages from your guests</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Premium Props</h4>
+          <p class="card__text">Fun accessories and themed prop collections</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Booths Section -->
+  <section class="section section--charcoal" id="booths">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Photo Booths</span>
+        <h2 class="section-header__title">Capture Every Moment</h2>
+        <p>Interactive photo experiences your guests will love</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="booth-card reveal">
+        <div class="booth-card__image">
+          <img src="assets/booth-360.jpg" alt="360 Photo Booth">
+        </div>
+        <div class="booth-card__content">
+          <h3 class="booth-card__title">360° Video Booth</h3>
+          <p>Step onto the platform and become the star of your own slow-motion video. Our 360° booth captures stunning footage from every angle, creating shareable content that your guests will treasure.</p>
+          <ul class="card__features" style="margin: 1.5rem 0;">
+            <li class="card__feature">Full rotation video capture</li>
+            <li class="card__feature">Slow-motion effects</li>
+            <li class="card__feature">Instant social sharing</li>
+            <li class="card__feature">Custom overlay branding</li>
+            <li class="card__feature">Premium props included</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Book 360° Booth</a>
+        </div>
+      </div>
+
+      <div class="booth-card reveal">
+        <div class="booth-card__image">
+          <img src="assets/booth-static.jpg" alt="Static Photo Booth">
+        </div>
+        <div class="booth-card__content">
+          <h3 class="booth-card__title">Classic Photo Booth</h3>
+          <p>Timeless photo booth fun with modern technology. High-quality prints, digital copies, and endless customization options make this a guest favorite at any event.</p>
+          <ul class="card__features" style="margin: 1.5rem 0;">
+            <li class="card__feature">DSLR quality photos</li>
+            <li class="card__feature">Instant prints</li>
+            <li class="card__feature">Custom photo templates</li>
+            <li class="card__feature">Green screen options</li>
+            <li class="card__feature">Props collection included</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Book Photo Booth</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio Guest Books Section -->
+  <section class="section section--black" id="guestbooks">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Audio Guest Books</span>
+        <h2 class="section-header__title">Messages That Last Forever</h2>
+        <p>Let your guests leave heartfelt voice recordings you'll cherish</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="guestbook-grid reveal-stagger">
+        <div class="guestbook-card">
+          <img class="guestbook-card__image" src="assets/guestbook-modern.jpg" alt="Modern Audio Guest Book">
+          <div class="guestbook-card__content">
+            <h4 class="guestbook-card__title">Modern</h4>
+            <p class="card__text">Sleek iPad-based recording station with touchscreen interface</p>
+            <a href="#contact" class="btn btn--outline" style="margin-top: 1rem;">Learn More</a>
+          </div>
+        </div>
+        <div class="guestbook-card">
+          <img class="guestbook-card__image" src="assets/guestbook-classic.jpg" alt="Classic Audio Guest Book">
+          <div class="guestbook-card__content">
+            <h4 class="guestbook-card__title">Classic</h4>
+            <p class="card__text">Vintage-inspired recording setup with elegant presentation</p>
+            <a href="#contact" class="btn btn--outline" style="margin-top: 1rem;">Learn More</a>
+          </div>
+        </div>
+        <div class="guestbook-card">
+          <img class="guestbook-card__image" src="assets/guestbook-telephone.jpg" alt="Telephone Booth Guest Book">
+          <div class="guestbook-card__content">
+            <h4 class="guestbook-card__title">Telephone Booth</h4>
+            <p class="card__text">Nostalgic rotary phone experience for intimate messages</p>
+            <a href="#contact" class="btn btn--outline" style="margin-top: 1rem;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Offerings Section -->
+  <section class="section section--charcoal" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">We Also Serve</span>
+        <h2 class="section-header__title">Additional Event Types</h2>
+        <p>Beyond weddings, we bring the same premium experience to all occasions</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="grid grid--4 reveal-stagger">
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3"></path>
+              <path d="M8 21V7a2 2 0 0 1 2-2h3"></path>
+              <path d="M3 21h5V11H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2z"></path>
+              <path d="M8 15h".5"></path>
+              <circle cx="12" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Birthdays</h4>
+          <p class="card__text">Make milestone celebrations unforgettable</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Corporate Events</h4>
+          <p class="card__text">Professional entertainment for business functions</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Reunions & BBQs</h4>
+          <p class="card__text">Keep the energy high at family gatherings</p>
+        </div>
+        <div class="addon-card">
+          <div class="addon-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+          </div>
+          <h4 class="addon-card__title">Custom Events</h4>
+          <p class="card__text">Tailored entertainment for any occasion</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar Section -->
+  <section class="section section--black calendar-section" id="calendar">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Availability</span>
+        <h2 class="section-header__title">Check Our Calendar</h2>
+        <p>See available dates and book your event</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="calendar reveal" id="calendarWidget">
+        <div class="calendar__header">
+          <h3 class="calendar__title" id="calendarTitle">February 2026</h3>
+          <div class="calendar__nav">
+            <button class="calendar__nav-btn" id="calendarPrev">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="calendar__nav-btn" id="calendarNext">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+        <div class="calendar__grid" id="calendarGrid">
+          <div class="calendar__day-header">Sun</div>
+          <div class="calendar__day-header">Mon</div>
+          <div class="calendar__day-header">Tue</div>
+          <div class="calendar__day-header">Wed</div>
+          <div class="calendar__day-header">Thu</div>
+          <div class="calendar__day-header">Fri</div>
+          <div class="calendar__day-header">Sat</div>
+          <!-- Days will be populated by JavaScript -->
+        </div>
+        <div class="calendar__legend">
+          <div class="calendar__legend-item">
+            <div class="calendar__legend-dot calendar__legend-dot--available"></div>
+            <span>Available</span>
+          </div>
+          <div class="calendar__legend-item">
+            <div class="calendar__legend-dot calendar__legend-dot--booked"></div>
+            <span>Booked</span>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;" class="reveal">
+        <a href="#contact" class="btn btn--primary">Request Booking</a>
+        <a href="#contact" class="btn btn--outline" style="margin-left: 1rem;">Check Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section--charcoal" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Get In Touch</span>
+        <h2 class="section-header__title">Let's Create Something Amazing</h2>
+        <p>Ready to book or have questions? We'd love to hear from you</p>
+        <div class="section-header__line"></div>
+      </div>
+      
+      <div class="contact__grid reveal">
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__info-label">Phone</p>
+              <p class="contact__info-value">(702) 555-3DDJ</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__info-label">Email</p>
+              <p class="contact__info-value">info@3ddjsentertainment.com</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__info-label">Location</p>
+              <p class="contact__info-value">Las Vegas, Nevada</p>
+            </div>
+          </div>
+          
+          <div class="footer__socials" style="margin-top: 2rem;">
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <form class="form" id="contactForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Your Name *</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address *</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone Number</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="(702) 555-1234">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="date">Event Date *</label>
+              <input class="form__input" type="date" id="date" name="date" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="eventType">Event Type *</label>
+            <select class="form__select" id="eventType" name="eventType" required>
+              <option value="">Select event type...</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="private">Private Party</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Tell Us About Your Event</label>
+            <textarea class="form__textarea" id="message" name="message" placeholder="Share details about your event, guest count, venue, and any specific requests..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary form__submit">
+            <span class="form__submit-text">Send Inquiry</span>
+            <div class="form__loader"></div>
+          </button>
+          
+          <div class="form__success" id="formSuccess">
+            <div class="form__success-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3>Thank You!</h3>
+            <p>We've received your inquiry and will get back to you within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img class="footer__logo" src="assets/logo.webp" alt="3D DJ's Entertainment">
+          <p>Premium DJ entertainment for Las Vegas weddings, corporate events, and private celebrations. Creating unforgettable experiences since 2010.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#about" class="footer__link">About Us</a></li>
+            <li><a href="#djs" class="footer__link">Our DJs</a></li>
+            <li><a href="#packages" class="footer__link">Packages</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#packages" class="footer__link">Wedding Packages</a></li>
+            <li><a href="#booths" class="footer__link">Photo Booths</a></li>
+            <li><a href="#guestbooks" class="footer__link">Audio Guest Books</a></li>
+            <li><a href="#services" class="footer__link">Corporate Events</a></li>
+            <li><a href="#addons" class="footer__link">Add-Ons</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 3D DJ's Entertainment LLC. All rights reserved.</p>
+        <p>Made with ♠ in Las Vegas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
