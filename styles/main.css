@@ -476,11 +476,12 @@ p {
 }
 
 .hero__subtext {
-  font-size: 1.25rem;
+  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
   color: var(--color-gold);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+  white-space: nowrap;
 }
 
 .hero__ctas {
