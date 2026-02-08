@@ -836,16 +836,39 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Card suit symbol */
-.package-card__suit {
-  display: block;
-  font-size: 1.75rem;
-  color: var(--color-gold);
+/* Card suit symbols */
+.package-card__suits {
+  display: flex;
+  gap: 0.3rem;
   margin-bottom: 0.75rem;
-  opacity: 0.7;
 }
 
-.package-card--featured .package-card__suit {
+.suit {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.suit--small {
+  font-size: 0.9rem;
+  align-self: flex-end;
+  margin-bottom: 1px;
+}
+
+.suit--hearts {
+  color: var(--color-gold);
+}
+
+.suit--diams {
+  color: var(--color-gold);
+}
+
+.package-card--featured .suit {
+  opacity: 1;
+}
+
+.package-card:hover .suit {
   opacity: 1;
 }
 

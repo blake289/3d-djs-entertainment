@@ -176,7 +176,9 @@
         <!-- Full House Package -->
         <div class="package-card">
           <div class="package-card__header">
-            <span class="package-card__suit">&clubs;</span>
+            <div class="package-card__suits">
+              <span class="suit suit--clubs">&clubs;</span><span class="suit suit--clubs">&clubs;</span><span class="suit suit--clubs">&clubs;</span><span class="suit suit--spades suit--small">&spades;</span><span class="suit suit--spades suit--small">&spades;</span>
+            </div>
             <h3 class="package-card__name">Full House</h3>
             <span class="package-card__subtitle">Essential Package</span>
           </div>
@@ -207,7 +209,9 @@
         <div class="package-card package-card--featured">
           <div class="package-card__badge">Most Popular</div>
           <div class="package-card__header">
-            <span class="package-card__suit">&diams;</span>
+            <div class="package-card__suits">
+              <span class="suit suit--spades">&spades;</span><span class="suit suit--hearts">&hearts;</span><span class="suit suit--diams">&diams;</span><span class="suit suit--clubs">&clubs;</span>
+            </div>
             <h3 class="package-card__name">4 Aces</h3>
             <span class="package-card__subtitle">Popular Choice</span>
           </div>
@@ -241,7 +245,9 @@
         <!-- Royal Flush Package -->
         <div class="package-card">
           <div class="package-card__header">
-            <span class="package-card__suit">&spades;</span>
+            <div class="package-card__suits">
+              <span class="suit suit--spades">&spades;</span><span class="suit suit--spades">&spades;</span><span class="suit suit--spades">&spades;</span><span class="suit suit--spades">&spades;</span><span class="suit suit--spades">&spades;</span>
+            </div>
             <h3 class="package-card__name">Royal Flush</h3>
             <span class="package-card__subtitle">Ultimate Experience</span>
           </div>
@@ -599,6 +605,55 @@
           </div>
         </div>
 
+        <!-- More photos -->
+        <div class="gallery__item gallery__item--wide" data-category="setup">
+          <img src="media-uploads/IMG_1336.jpeg" alt="DJ behind booth with lighting and speakers" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">DJ Setup</span>
+            <h4 class="gallery__title">Behind the Booth</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="wedding">
+          <img src="media-uploads/IMG_2123.jpeg" alt="Just Married wedding kiss" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">Just Married</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="wedding">
+          <img src="media-uploads/IMG_2136.jpeg" alt="Couple at custom wedding mirror" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">Custom Welcome Mirror</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="wedding">
+          <img src="media-uploads/IMG_0074.jpeg" alt="Wedding reception guests at venue" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">Reception in Full Swing</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="booth">
+          <img src="media-uploads/60-20251031-212129.574460-photo-5x3.5.jpeg" alt="Couple in Halloween photo booth" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Photo Booth</span>
+            <h4 class="gallery__title">Halloween Booth Fun</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="booth">
+          <img src="media-uploads/68-20251031-213219.710658-photo-5x3.5.jpeg" alt="Friends in Halloween photo booth" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Photo Booth</span>
+            <h4 class="gallery__title">Party Photo Booth</h4>
+          </div>
+        </div>
+
         <!-- Videos -->
         <div class="gallery__item gallery__item--video" data-category="video">
           <video src="media-uploads/59-20251031-212025.477812-boomerang.mp4" muted loop playsinline preload="metadata"></video>
@@ -613,6 +668,17 @@
 
         <div class="gallery__item gallery__item--video" data-category="video">
           <video src="media-uploads/64-20251031-212638.175986-boomerang.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="gallery__video-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Boomerang</span>
+          </div>
+          <div class="gallery__play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--video" data-category="video">
+          <video src="media-uploads/65-20251031-212904.208204-boomerang.mp4" muted loop playsinline preload="metadata"></video>
           <div class="gallery__video-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             <span>Boomerang</span>
