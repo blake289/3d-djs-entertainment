@@ -19,9 +19,9 @@
   <!-- Splash Intro -->
   <div class="splash" id="splash">
     <div class="splash__bg-images">
-      <img class="splash__bg-image" src="assets/hero-bg-1.jpg" alt="">
-      <img class="splash__bg-image" src="assets/hero-bg-2.jpg" alt="">
-      <img class="splash__bg-image" src="assets/hero-bg-3.jpg" alt="">
+      <img class="splash__bg-image" src="media-uploads/IMG_2124.jpeg" alt="">
+      <img class="splash__bg-image" src="media-uploads/IMG_1338.jpeg" alt="">
+      <img class="splash__bg-image" src="media-uploads/IMG_0075.jpeg" alt="">
     </div>
     <div class="splash__grain"></div>
     <img class="splash__logo" src="assets/logo.webp" alt="3D DJ's Entertainment">
@@ -40,6 +40,7 @@
           <li><a href="#djs" class="nav__link">Our DJs</a></li>
           <li><a href="#packages" class="nav__link">Packages</a></li>
           <li><a href="#booths" class="nav__link">Photo Booths</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
           <li><a href="#calendar" class="nav__link">Calendar</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
@@ -62,6 +63,7 @@
       <li><a href="#djs" class="mobile-menu__link">Our DJs</a></li>
       <li><a href="#packages" class="mobile-menu__link">Packages</a></li>
       <li><a href="#booths" class="mobile-menu__link">Photo Booths</a></li>
+      <li><a href="#gallery" class="mobile-menu__link">Gallery</a></li>
       <li><a href="#calendar" class="mobile-menu__link">Calendar</a></li>
       <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
     </ul>
@@ -70,9 +72,9 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero__bg">
-      <img class="hero__bg-image hero__bg-image--active" src="assets/hero-bg-1.jpg" alt="">
-      <img class="hero__bg-image" src="assets/hero-bg-2.jpg" alt="">
-      <img class="hero__bg-image" src="assets/hero-bg-3.jpg" alt="">
+      <img class="hero__bg-image hero__bg-image--active" src="media-uploads/IMG_2124.jpeg" alt="">
+      <img class="hero__bg-image" src="media-uploads/IMG_1338.jpeg" alt="">
+      <img class="hero__bg-image" src="media-uploads/IMG_0075.jpeg" alt="">
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
@@ -99,7 +101,7 @@
           <a href="#contact" class="btn btn--primary" style="margin-top: 1.5rem;">Get In Touch</a>
         </div>
         <div class="about__image reveal">
-          <img src="assets/about-vegas.jpg" alt="Las Vegas nightlife entertainment">
+          <img src="media-uploads/IMG_0072.jpeg" alt="Wedding venue with heart arch and Las Vegas skyline">
         </div>
       </div>
     </div>
@@ -372,7 +374,7 @@
       
       <div class="booth-card reveal">
         <div class="booth-card__image">
-          <img src="assets/booth-360.jpg" alt="360 Photo Booth">
+          <img src="media-uploads/IMG_0078.jpeg" alt="360 Photo Booth in action">
         </div>
         <div class="booth-card__content">
           <h3 class="booth-card__title">360° Video Booth</h3>
@@ -390,7 +392,7 @@
 
       <div class="booth-card reveal">
         <div class="booth-card__image">
-          <img src="assets/booth-static.jpg" alt="Static Photo Booth">
+          <img src="media-uploads/IMG_3156.jpeg" alt="Inflatable photo booth with props and stanchions">
         </div>
         <div class="booth-card__content">
           <h3 class="booth-card__title">Classic Photo Booth</h3>
@@ -436,7 +438,7 @@
           </div>
         </div>
         <div class="guestbook-card">
-          <img class="guestbook-card__image" src="assets/guestbook-telephone.jpg" alt="Telephone Booth Guest Book">
+          <img class="guestbook-card__image" src="media-uploads/IMG_0363.jpeg" alt="Vintage rotary phone audio guest book">
           <div class="guestbook-card__content">
             <h4 class="guestbook-card__title">Telephone Booth</h4>
             <p class="card__text">Nostalgic rotary phone experience for intimate messages</p>
@@ -502,6 +504,118 @@
           </div>
           <h4 class="addon-card__title">Custom Events</h4>
           <p class="card__text">Tailored entertainment for any occasion</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section section--black" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Our Work</span>
+        <h2 class="section-header__title">Event Gallery</h2>
+        <p>Real moments from real events — see the 3D DJ's experience in action</p>
+        <div class="section-header__line"></div>
+      </div>
+
+      <div class="gallery__filters reveal">
+        <button class="gallery__filter gallery__filter--active" data-filter="all">All</button>
+        <button class="gallery__filter" data-filter="wedding">Weddings</button>
+        <button class="gallery__filter" data-filter="setup">DJ Setups</button>
+        <button class="gallery__filter" data-filter="booth">Photo Booths</button>
+        <button class="gallery__filter" data-filter="video">Videos</button>
+      </div>
+
+      <div class="gallery__grid reveal">
+        <!-- Row 1: Wide wedding + setup -->
+        <div class="gallery__item gallery__item--wide" data-category="wedding">
+          <img src="media-uploads/IMG_2124.jpeg" alt="Wedding kiss with rose petals" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">Rose Petal First Kiss</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="setup">
+          <img src="media-uploads/IMG_1337.jpeg" alt="DJ booth setup with Las Vegas skyline" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">DJ Setup</span>
+            <h4 class="gallery__title">Level 108 Reception</h4>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery__item" data-category="wedding">
+          <img src="media-uploads/IMG_2134.jpeg" alt="Emotional mother daughter dance" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">Mother-Daughter Dance</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--tall" data-category="setup">
+          <img src="media-uploads/IMG_3605.jpeg" alt="Rane turntable setup with 3D DJs branding" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Equipment</span>
+            <h4 class="gallery__title">Rane Professional Setup</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="booth">
+          <img src="media-uploads/IMG_1346.jpeg" alt="Photo booth output with custom gold overlay" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Photo Booth</span>
+            <h4 class="gallery__title">Custom 360 Overlay</h4>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery__item" data-category="booth">
+          <img src="media-uploads/52-20251031-211208.302005-photo-5x3.5.jpeg" alt="Halloween costume photo booth" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Photo Booth</span>
+            <h4 class="gallery__title">Halloween Party Booth</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="setup">
+          <img src="media-uploads/CB46D3AF-EA05-4EB1-B18D-D43E326EF605.jpeg" alt="Full DJ setup at hotel venue" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">DJ Setup</span>
+            <h4 class="gallery__title">Hotel Venue Setup</h4>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="wedding">
+          <img src="media-uploads/IMG_1341.jpeg" alt="DJ with bride at wedding reception" loading="lazy">
+          <div class="gallery__overlay">
+            <span class="gallery__badge">Wedding</span>
+            <h4 class="gallery__title">With the Bride</h4>
+          </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="gallery__item gallery__item--video" data-category="video">
+          <video src="media-uploads/59-20251031-212025.477812-boomerang.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="gallery__video-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>360 Booth</span>
+          </div>
+          <div class="gallery__play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--video" data-category="video">
+          <video src="media-uploads/64-20251031-212638.175986-boomerang.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="gallery__video-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Boomerang</span>
+          </div>
+          <div class="gallery__play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
         </div>
       </div>
     </div>
