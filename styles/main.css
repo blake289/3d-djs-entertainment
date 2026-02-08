@@ -457,8 +457,8 @@ p {
 .hero__content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  padding: 0 var(--padding-desktop);
+  max-width: 900px;
+  padding: 0 clamp(16px, 4vw, 64px);
 }
 
 .hero__logo {
@@ -476,9 +476,9 @@ p {
 }
 
 .hero__subtext {
-  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.65rem, 2.2vw, 1.25rem);
   color: var(--color-gold);
-  letter-spacing: 3px;
+  letter-spacing: clamp(1px, 0.4vw, 3px);
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   white-space: nowrap;
@@ -863,6 +863,29 @@ p {
 
 .suit--diams {
   color: var(--color-gold);
+}
+
+/* Ace pip (card corner style) */
+.ace-pip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
+  color: var(--color-gold);
+  opacity: 1;
+}
+
+.ace-pip__letter {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.ace-pip__suit {
+  font-size: 0.85rem;
+  margin-top: -2px;
 }
 
 .package-card--featured .suit {
