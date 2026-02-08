@@ -787,34 +787,80 @@ p {
 
 /* ===== PACKAGES ===== */
 .package-card {
+  position: relative;
   background: var(--color-deep-charcoal);
   border-radius: var(--radius-card);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all var(--duration-hover) var(--ease-smooth);
 }
 
 .package-card:hover {
-  border-color: var(--color-gold);
+  border-color: rgba(201, 162, 77, 0.4);
   box-shadow: var(--glow-gold);
+  transform: translateY(-4px);
+}
+
+/* Featured card */
+.package-card--featured {
+  border-color: var(--color-gold);
+  z-index: 1;
+  box-shadow: 0 0 40px rgba(201, 162, 77, 0.15);
+}
+
+.package-card--featured:hover {
+  box-shadow: 0 0 50px rgba(201, 162, 77, 0.25);
+}
+
+/* Most Popular badge */
+.package-card__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.35rem 1.25rem;
+  background: var(--color-gold);
+  color: var(--color-primary-black);
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .package-card__header {
-  padding: 2rem;
-  text-align: center;
-  background: linear-gradient(135deg,
-      rgba(201, 162, 77, 0.1) 0%,
-      rgba(201, 162, 77, 0.05) 100%);
-  border-bottom: 1px solid rgba(201, 162, 77, 0.2);
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Card suit symbol */
+.package-card__suit {
+  display: block;
+  font-size: 1.75rem;
+  color: var(--color-gold);
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
+}
+
+.package-card--featured .package-card__suit {
+  opacity: 1;
 }
 
 .package-card__name {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
-.package-card__price {
-  font-size: 0.875rem;
+.package-card__subtitle {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: var(--color-gold);
 }
 
