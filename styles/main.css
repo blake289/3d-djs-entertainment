@@ -226,7 +226,7 @@ p {
 }
 
 .nav__logo img {
-  height: 50px;
+  height: 65px;
   width: auto;
 }
 
@@ -352,6 +352,7 @@ p {
   background: var(--color-primary-black);
   z-index: 9999;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: opacity 800ms var(--ease-smooth), visibility 800ms var(--ease-smooth);
@@ -406,6 +407,28 @@ p {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Splash waveform */
+.waveform--splash {
+  justify-content: center;
+  margin-top: 1.5rem;
+  height: 36px;
+  gap: 4px;
+  opacity: 0;
+  animation: splashWaveformIn 600ms var(--ease-smooth) 600ms forwards;
+}
+
+.waveform--splash .waveform__bar {
+  width: 3px;
+  border-radius: 2px;
+  background: var(--color-gold);
+}
+
+@keyframes splashWaveformIn {
+  to {
+    opacity: 0.6;
   }
 }
 
@@ -1727,16 +1750,23 @@ p {
 .waveform--hero {
   justify-content: center;
   margin-top: 2.5rem;
-  height: 28px;
+  height: 48px;
   opacity: 0.7;
+  gap: 4px;
 }
 
 .waveform--hero .waveform__bar {
-  width: 2.5px;
+  width: 4px;
+  border-radius: 3px;
   background: var(--color-gold);
 }
 
 /* Footer waveform */
+.footer__waveform-wrap--brand {
+  padding: 1rem 0 0;
+  overflow: hidden;
+}
+
 .footer__waveform-wrap {
   padding: 2rem 0;
   overflow: hidden;
