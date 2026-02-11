@@ -343,23 +343,25 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.appendChild(input);
   });
 
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const submitBtn = this.querySelector('.form__submit');
-    submitBtn.classList.add('form__submit--loading');
-
-    fetch(this.action, {
-      method: 'POST',
-      body: new FormData(this),
-      headers: { 'Accept': 'application/json' }
-    }).then(function () {
-      contactForm.style.display = 'none';
-      formSuccess.classList.add('form__success--visible');
-    }).catch(function () {
-      contactForm.style.display = 'none';
-      formSuccess.classList.add('form__success--visible');
-    });
-  });
+  // --- JS form interception temporarily disabled ---
+  // Form now submits normally via HTML POST to FormSubmit.
+  // contactForm.addEventListener('submit', function (e) {
+  //   e.preventDefault();
+  //   const submitBtn = this.querySelector('.form__submit');
+  //   submitBtn.classList.add('form__submit--loading');
+  //
+  //   fetch(this.action, {
+  //     method: 'POST',
+  //     body: new FormData(this),
+  //     headers: { 'Accept': 'application/json' }
+  //   }).then(function () {
+  //     contactForm.style.display = 'none';
+  //     formSuccess.classList.add('form__success--visible');
+  //   }).catch(function () {
+  //     contactForm.style.display = 'none';
+  //     formSuccess.classList.add('form__success--visible');
+  //   });
+  // });
 
   // ===== GALLERY FILTERS =====
   const galleryFilters = document.querySelectorAll('.gallery__filter');
